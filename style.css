@@ -1,0 +1,114 @@
+* {
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top left, #f4a9a8 0%, #f7dad9 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  color: #de8971;
+  font-weight: bolder;
+  font-style: italic;
+  font-size: 40px;
+}
+
+.functionality {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.calculator {
+  width: 400px;
+  height: 550px;
+  margin: 80px auto;
+  margin-top: 20px;
+  background-color: #ffe9d6;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
+}
+
+.buttons {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 72px);
+  grid-template-rows: minmax(70px, auto) repeat(5, 70px);
+  justify-content: center;
+}
+
+.buttons > * {
+  margin: 3px 3px 3px 3px;
+}
+
+.screen {
+  width: 317px;
+  height: 100px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+  grid-column: 1/-1;
+  background-color: #a7d0cd;
+  background-size: 350px 150px;
+  color: #f8f8f8;
+  font-size: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 15px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.display > * {
+  font-size: 25px;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 35px;
+  border: 1px solid #87aaaa;
+  color: #fdfdfd;
+  background-color: #87aaaa;
+  cursor: pointer;
+}
+
+button:hover {
+  filter: brightness(55%);
+}
+
+button:active {
+  box-shadow: inset 1px 1px 2px #babeec;
+  inset: -1px -1px 2px #babeec;
+}
+
+.math {
+  background-color: #5e454b;
+  border: 1px solid #5e454b;
+  color: #fdfdfd;
+}
+
+#clear > button {
+  background-color: #f2ddc1;
+  border: 1px solid #5e454b;
+  color: #6b603f;
+}
+
+#del > button {
+  background-color: #f2ddc1;
+  border: 1px solid #5e454b;
+  color: #6b603f;
+}
+
+#ans > button {
+  font-size: 22px;
+}
